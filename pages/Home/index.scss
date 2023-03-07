@@ -1,3 +1,171 @@
-body {
-  background: #000;
+@import "../../assets/css/styles/index.scss";
+%textstyle {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ffffff;
+  opacity: 0.7;
+  font-weight: bold normal;
+}
+%textstyle2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+%textstyle3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: white;
+}
+%footer__download {
+  width: 240px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  height: 45px;
+  border-radius: 10px;
+  padding: 10px 30px 10px 17px;
+}
+%footer__download-style {
+  font-weight: 450;
+  font-size: 12px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.footer {
+  background: #333333;
+  padding-bottom: 120px;
+  .container {
+    .footer__content {
+      display: grid;
+      grid-template-columns: 259px 137px 176px 243px;
+      gap: 0 72px;
+      @include down(xl) {
+        display: block;
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer__box {
+        &:first-child {
+          margin-top: 52px;
+          .footer__lime {
+            font-size: 11px;
+            margin-bottom: 13px;
+            @include down(xl) {
+              img {
+                margin: 0 auto;
+              }
+            }
+          }
+          .footer__confin {
+            @extend %textstyle;
+            margin-top: 30px;
+          }
+
+          .footer__polit {
+            color: #a1d214;
+            border-bottom: 2px solid;
+            display: inline;
+          }
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: 95px;
+          .footer__aboutc {
+            @extend %textstyle2;
+            margin-bottom: 17px;
+          }
+          .footer__links {
+            .footer__link {
+              @extend %textstyle3;
+              text-decoration: none;
+            }
+          }
+        }
+        &:nth-child(3) {
+          margin-top: 95px;
+        }
+
+        &:last-child {
+          @include down(xl) {
+            margin-left: 0;
+          }
+          margin-top: 91px;
+          margin-left: 75px;
+          .footer__support {
+            font-weight: 500;
+            font-size: 11px;
+            color: #ffffff;
+            margin-bottom: 15px;
+          }
+          .footer__phone {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            @include down(xl) {
+              display: flex;
+              justify-content: center;
+            }
+
+            .footer__phone-title {
+              margin-left: 17px;
+              font-weight: 600;
+              font-size: 42px;
+              line-height: 51px;
+              color: #ffffff;
+            }
+          }
+          .footer__appstore {
+            @extend %footer__download;
+            margin-bottom: 13px;
+            @include down(xl) {
+              margin: 0 auto;
+            }
+            .footer__appstore-title {
+              @extend %footer__download-style;
+            }
+          }
+          .footer__playmarket {
+            @extend %footer__download;
+            margin-bottom: 32px;
+            @include down(xl) {
+              margin: 0 auto;
+            }
+            .footer__playmarket-title {
+              @extend %footer__download-style;
+            }
+          }
+          .footer__icon {
+            display: grid;
+            grid-template-columns: repeat(3, 24px);
+            gap: 0 13px;
+            @include down(xl) {
+              display: flex;
+              justify-content: center;
+            }
+            .footer__facebook {
+              color: white;
+              opacity: 0.3;
+            }
+          }
+        }
+        @include down(xl) {
+          &:first-child,
+          &:nth-child(2),
+          &:nth-child(3),
+          &:last-child {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
 }
