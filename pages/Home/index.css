@@ -64,7 +64,7 @@
   height: 16px;
 }
 
-.header .header__wrapper .header__bottom .header__bottom-trash, .header .header__wrapper .header__bottom .header__bottom-izbrannoe, .header .header__wrapper .header__bottom .header__bottom-cabinet {
+.header .header__wrapper .header__bottom .header__bottom-trash, .header .header__wrapper .header__bottom .header__bottom-izbrannoe, .header .header__wrapper .header__bottom .header__bottom-cabinet, .header .header__wrapper .header__top .header__nav-item_2 .header__nav-text {
   cursor: pointer;
 }
 

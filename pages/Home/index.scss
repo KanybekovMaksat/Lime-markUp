@@ -86,6 +86,7 @@
         .header__nav-text {
           margin-left: 41px;
           transition: 0.3s;
+          @extend %cursorpointer;
 
         }
         .header__nav-text:hover {
