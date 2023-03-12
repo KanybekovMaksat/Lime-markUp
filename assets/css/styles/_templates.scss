@@ -1,0 +1,60 @@
+%textstyle4 {
+    color: white;
+    display: flex;
+    text-decoration: none;
+  }
+  %textstyle {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: bold normal;
+  }
+  %textstyle2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+  %textstyle3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+  }
+  %footer__download {
+    width: 240px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 17px;
+  }
+  %footer__download-style {
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-left: 20px;
+  }
+  %headertextstyle {
+    background: #a1d214;
+  }
+  %headerbottomtextstyle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+  }
+  %headerbottomimg {
+    width: 22px;
+    height: 16px;
+  }
+%cursorpointer {
+  cursor: pointer;
+}
